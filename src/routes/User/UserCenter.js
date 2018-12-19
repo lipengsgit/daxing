@@ -131,7 +131,7 @@ export default class UserCenter extends PureComponent {
       return (
         <List.Item key={item.id}>
           <List.Item.Meta
-            avatar={<Avatar src={item.user.avatar}/>}
+            avatar={<Avatar src={item.user.avatar} />}
             title={
               <span>
                 <a className={styles.username}>{item.user.name}</a>
