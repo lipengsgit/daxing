@@ -1,0 +1,144 @@
+@import '~antd/lib/style/themes/default.less';
+
+.header {
+  height: 64px;
+  line-height: 64px;
+  background-color: rgba(0, 21, 41, 1);
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  position: relative;
+  :global{
+    .ant-menu-dark .ant-menu-item{
+      color: rgb(255, 255, 255);
+    }
+  }
+}
+
+i.trigger {
+  font-size: 20px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: all 0.3s, padding 0s;
+  padding: 0 24px;
+  &:hover {
+    background: @primary-1;
+  }
+}
+
+.left {
+  display: inline-flex;
+  height: 100%;
+  img {
+    float: left;
+  }
+  span {
+    color: #FFF;
+    letter-spacing: 0;
+    line-height: 30px;
+    float: right;
+  }
+  .dashboard{
+    background-size: 206.3077683% 668.619791%;
+    background-position: 82.905758% 39.567209%;
+    background-image: -webkit-linear-gradient(-17deg, #907BC9 0%, #4097FC 100%);
+    background-image: -o-linear-gradient(-17deg, #907BC9 0%, #4097FC 100%);
+    background-image: -moz-linear-gradient(-17deg, #907BC9 0%, #4097FC 100%);
+    background-image: linear-gradient(-17deg, #907BC9 0%, #4097FC 100%);
+    box-shadow: 0 7px 16px 0 rgba(129,132,225,0.25);
+    background-repeat:no-repeat;
+    margin: 21px 20px 21px 60px;
+    cursor: pointer;
+    img {
+      margin: 9px 10px;
+    }
+    span{
+      margin-right: 10px;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  .location{
+    margin: 21px 0;
+  }
+  .userDesc{
+    margin: 21px 30px;
+    span{
+      opacity: 0.7;
+      margin-left: 10px;
+    }
+  }
+}
+.menu{
+  color: rgb(255, 255, 255);
+  background: #001529;
+  height: 64px;
+  float: left;
+}
+.menu .text{
+  margin-left: 8px;
+}
+
+
+
+.right {
+  float: right;
+  height: 100%;
+  .action {
+    cursor: pointer;
+    padding: 0 12px;
+    display: inline-block;
+    transition: all 0.3s;
+    height: 100%;
+    > i {
+      font-size: 16px;
+      vertical-align: middle;
+      color: @text-color;
+    }
+    &:hover,
+    &:global(.ant-popover-open) {
+      background: @primary-1;
+    }
+  }
+
+  .account {
+    .avatar {
+      margin: 20px 8px 20px 0;
+      color: @primary-color;
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+    }
+  }
+}
+.name{
+  color: #fff;
+}
+
+@media only screen and (max-width: @screen-md) {
+  .header {
+    :global(.ant-divider-vertical) {
+      vertical-align: unset;
+    }
+    .name {
+      display: none;
+    }
+    i.trigger {
+      padding: 0 12px;
+    }
+    .logo {
+      padding-right: 12px;
+      position: relative;
+    }
+    .right {
+      position: absolute;
+      right: 12px;
+      top: 0;
+      background: #fff;
+      .account {
+        .avatar {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

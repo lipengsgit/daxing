@@ -1,0 +1,26 @@
+@import '../../../node_modules/antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.tableList {
+  :global {
+    .ant-table {
+      .ant-table-row-expand-icon {
+        width: 0;
+        height: 0;
+        line-height: 0;
+        border: 0;
+        margin-left: 0;
+      }
+      .ant-table-row-collapsed:after {
+        content: '';
+      }
+      .ant-table-row-expanded:after {
+        content: '';
+      }
+    }
+
+
+  }
+}
+
+

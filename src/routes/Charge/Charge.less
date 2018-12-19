@@ -1,0 +1,206 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.headerInfo {
+  position: relative;
+  text-align: center;
+  & > span {
+    color: @text-color-secondary;
+    display: inline-block;
+    font-size: @font-size-base;
+    line-height: 22px;
+    margin-bottom: 4px;
+  }
+  & > p {
+    color: @heading-color;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+  }
+  & > em {
+    background-color: @border-color-split;
+    position: absolute;
+    height: 56px;
+    width: 1px;
+    top: 0;
+    right: 0;
+  }
+}
+
+.listContent {
+  font-size: 0;
+  .listContentItem {
+    color: @text-color-secondary;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: @font-size-base;
+    margin-left: 40px;
+    > span {
+      line-height: 20px;
+    }
+    > p {
+      margin-top: 4px;
+      margin-bottom: 0;
+      line-height: 22px;
+    }
+  }
+}
+
+
+.extraContentSearch {
+  margin-top: 10px;
+  width: 100%;
+}
+
+@media screen and (max-width: @screen-xs) {
+  .standardList {
+    :global {
+      .ant-list-item-content {
+        display: block;
+        flex: none;
+        width: 100%;
+      }
+      .ant-list-item-action {
+        margin-left: 0;
+      }
+    }
+    .listContent {
+      margin-left: 0;
+      & > div {
+        margin-left: 0;
+      }
+    }
+    .listCard {
+      :global {
+        .ant-card-head-title {
+          overflow: visible;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .standardList {
+    .extraContentSearch {
+      margin-left: 0;
+      width: 100%;
+    }
+    .headerInfo {
+      margin-bottom: 16px;
+      & > em {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .standardList {
+    .listContent {
+      & > div {
+        display: block;
+      }
+      & > div:last-child {
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .listCard {
+    :global {
+      .ant-radio-group {
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-lg) and (min-width: @screen-md) {
+  .standardList {
+    .listContent {
+      & > div {
+        display: block;
+      }
+      & > div:last-child {
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xl) {
+  .standardList {
+    .listContent {
+      & > div {
+        margin-left: 24px;
+      }
+      & > div:last-child {
+        top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .standardList {
+    .listContent {
+      text-align: right;
+      & > div:last-child {
+        top: 0;
+      }
+    }
+  }
+}
+
+.u119_div {
+  width: 37px;
+  height: 18px;
+  /* background: inherit; */
+  background-color: rgba(153, 153, 255, 1);
+}
+
+.main {
+  // width: 1152px;
+  background-color: #fff;
+  border-radius: 20px;
+  width: '100%';
+  height: 350px;
+  margin: 25px auto;
+  /* position: absolute; */
+  /* top: 0; */
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.load {
+  :global {
+    .ant-table {
+      .ant-table-body {
+        .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+          padding: 15px 1px;
+          word-break: break-all;
+        }
+      }
+    }
+  }
+
+}
+
+.message {
+  :global {
+    .ant-modal-content {
+      .ant-modal-body {
+        padding: 5px;
+        font-size: 14px;
+        line-height: 1.5;
+        word-wrap: break-word;
+      }
+    }
+  }
+
+}

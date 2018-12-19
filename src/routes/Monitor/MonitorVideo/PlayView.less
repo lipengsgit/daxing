@@ -1,0 +1,253 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../../utils/utils.less';
+
+// 视频监控方向盘样式
+
+.hik_content {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: #1F7FBB;
+}
+
+.hiv_tree_div {
+  margin:0 auto 10px auto;
+  width:282px;
+  height: 500px;
+  overflow: auto;
+  border-radius:5px;
+  background-color: #CDCDB4;
+  box-sizing: border-box;
+  padding-left:3px;
+}
+
+.hiv_circle_div {
+  margin:0 auto;
+  position:relative;
+  width:282px;
+  height:168px;
+  border: 2px solid #1F7FBB;
+  border-radius:5px;
+}
+
+.hiv_circle_div .circle_box{
+  position:absolute;
+  width:118px;
+  height:118px;
+  left:5px;
+  top:25px;
+  background:url("../../../assets/image/hik/bg.png") no-repeat 100%;
+  z-index: 1;
+}
+.hiv_circle_div .button_box{
+  position:absolute;
+  width:119px;
+  height:108px;
+  left:138px;
+  top:25px;
+}
+
+.hiv_circle_div .circle_box .arrow{
+  display: block;
+}
+
+.hiv_circle_div .circle_box .arrow_top{
+  position:absolute;
+  width:16px;
+  height:16px;
+  left:59px;
+  top:15px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.hiv_circle_div .circle_box .arrow_left{
+  position:absolute;
+  width:16px;
+  height:16px;
+  left:23px;
+  top:50px;
+  z-index: 5;
+  cursor: pointer;
+
+  transform:rotate(-90deg);
+  -ms-transform:rotate(-90deg); 	/* IE 9 */
+  -moz-transform:rotate(-90deg); 	/* Firefox */
+  -webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
+}
+
+.hiv_circle_div .circle_box .arrow_right{
+  position:absolute;
+  width:16px;
+  height:16px;
+  left:94px;
+  top:50px;
+  z-index: 5;
+  cursor: pointer;
+
+  transform:rotate(90deg);
+  -ms-transform:rotate(90deg); 	/* IE 9 */
+  -moz-transform:rotate(90deg); 	/* Firefox */
+  -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+}
+
+.hiv_circle_div .circle_box .arrow_bottom{
+  position:absolute;
+  width:16px;
+  height:16px;
+  left:60px;
+  top:88px;
+  z-index: 5;
+  cursor: pointer;
+
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg); 	/* IE 9 */
+  -moz-transform:rotate(180deg); 	/* Firefox */
+  -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+}
+
+.hiv_circle_div .circle_box .arrow_left_top{
+  position:absolute;
+  width:16px;
+  height:16px;
+  left:33px;
+  top:27px;
+  z-index: 5;
+  cursor: pointer;
+
+  transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg); 	/* IE 9 */
+  -moz-transform:rotate(-45deg); 	/* Firefox */
+  -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+}
+
+.hiv_circle_div .circle_box .arrow_right_top{
+  position:absolute;
+  width:16px;
+  height:16px;
+  left:84px;
+  top:27px;
+  z-index: 5;
+  cursor: pointer;
+
+  transform:rotate(45deg);
+  -ms-transform:rotate(45deg); 	/* IE 9 */
+  -moz-transform:rotate(45deg); 	/* Firefox */
+  -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+}
+
+.hiv_circle_div .circle_box .arrow_left_bottom{
+  position:absolute;
+  width:16px;
+  height:16px;
+  left:33px;
+  top:77px;
+  z-index: 5;
+  cursor: pointer;
+
+  transform:rotate(-135deg);
+  -ms-transform:rotate(-135deg); 	/* IE 9 */
+  -moz-transform:rotate(-135deg); 	/* Firefox */
+  -webkit-transform:rotate(-135deg); /* Safari 和 Chrome */
+}
+
+.hiv_circle_div .circle_box .arrow_right_bottom{
+  position:absolute;
+  width:16px;
+  height:16px;
+  left:84px;
+  top:77px;
+  z-index: 5;
+  cursor: pointer;
+
+  transform:rotate(135deg);
+  -ms-transform:rotate(135deg); 	/* IE 9 */
+  -moz-transform:rotate(135deg); 	/* Firefox */
+  -webkit-transform:rotate(135deg); /* Safari 和 Chrome */
+}
+
+.hiv_circle_div .circle_box .arrow_press{
+  background:url("../../../assets/image/hik/icon-top2.png") no-repeat 100%;
+}
+
+.hiv_circle_div .circle_box .arrow_bg{
+  background:url("../../../assets/image/hik/icon-top.png") no-repeat 100%;
+}
+
+.hiv_circle_div .circle_box .arrow_bg1{
+  background:url("../../../assets/image/hik/icon-top1.png") no-repeat 100%;
+}
+
+.hiv_circle_div .button_box .button_1{
+  position:absolute;
+  width:104px;
+  height:25px;
+  left:0;
+  top:0;
+  background:url("../../../assets/image/hik/button.png") no-repeat 100%;
+  z-index: 1;
+}
+
+.hiv_circle_div .button_box .button_2{
+  position:absolute;
+  width:104px;
+  height:25px;
+  left:0;
+  top:41.5px;
+  background:url("../../../assets/image/hik/button.png") no-repeat 100%;
+  z-index: 1;
+}
+
+.hiv_circle_div .button_box .button_3{
+  position:absolute;
+  width:104px;
+  height:25px;
+  left:0;
+  top:83px;
+  background:url("../../../assets/image/hik/button.png") no-repeat 100%;
+  z-index: 1;
+}
+
+.hiv_circle_div .button_box .increase{
+  width:16px;
+  height:16px;
+  float: left;
+  background:url("../../../assets/image/hik/icon-increase.png") no-repeat 100%;
+  z-index: 5;
+  cursor: pointer;
+  margin: 4px 0 0 4px;
+}
+
+.hiv_circle_div .button_box .decrease{
+  width:16px;
+  height:16px;
+  float: right;
+  background:url("../../../assets/image/hik/icon-decrease.png") no-repeat 100%;
+  z-index: 5;
+  cursor: pointer;
+  margin: 4px 4px 0 0;
+}
+
+.hiv_circle_div .button_box .increase_bg{
+  background:url("../../../assets/image/hik/icon-increase.png") no-repeat 100%;
+}
+
+.hiv_circle_div .button_box .increase_bg1{
+  background:url("../../../assets/image/hik/icon-increase1.png") no-repeat 100%;
+}
+
+.hiv_circle_div .button_box .decrease_bg{
+  background:url("../../../assets/image/hik/icon-decrease.png") no-repeat 100%;
+}
+
+.hiv_circle_div .button_box .decrease_bg1{
+  background:url("../../../assets/image/hik/icon-decrease1.png") no-repeat 100%;
+}
+
+.hiv_circle_div .button_box .text_span{
+  float:left;
+  width:64px;
+  text-align:center;
+  color:#FFF;
+  line-height:25px;
+}
