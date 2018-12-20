@@ -1,11 +1,10 @@
-import React, { PureComponent,Fragment } from 'react';
+import React, { PureComponent } from 'react';
 import moment from 'moment';
 import {connect} from 'dva';
 import {Link, routerRedux} from 'dva/router';
 import {Row, Col, Card, List, Avatar, Table} from 'antd';
 
 import {Radar} from 'components/Charts';
-import EditableLinkGroup from 'components/EditableLinkGroup';
 import PageHeaderLayout from '../../layouts/PageHeaderLayout';
 
 import styles from './UserCenter.less';
