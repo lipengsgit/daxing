@@ -150,7 +150,7 @@ export default class UserCenter extends PureComponent {
     });
   }
 
-  // 收费统计
+  // 个人中心收费统计
   renderTableList() {
     const {tradeOrders: {historyData}} = this.props;
     const payType = ['cash','scan','pos','total'] // 现金，扫码，刷卡，总计
